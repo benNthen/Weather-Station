@@ -5,8 +5,6 @@ import Navbar from './components/Navbar'
 import { useQuery } from 'react-query'
 import axios from 'axios'
 
-// https://api.openweathermap.org/data/2.5/forecast?q=auckland&appid={27d3f45558f287e055aa204e4f0d0855}
-
 interface WeatherData {
   cod: string
   message: number
@@ -71,9 +69,6 @@ export default function Home() {
       )
       return data
     }
-    // fetch(
-    //   'https://api.openweathermap.org/data/2.5/forecast?q=auckland&appid=27d3f45558f287e055aa204e4f0d0855&cnt=20'
-    // ).then((res) => res.json())
   )
 
   console.log('data', data?.city.name)
